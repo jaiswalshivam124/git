@@ -1,0 +1,30 @@
+…or create a new repository on the command line
+echo "# git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jaiswalshivam124/git.git
+git push -u origin main
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/jaiswalshivam124/git.git
+git branch -M main
+git push -u origin main
+
+
+#Doing add and commit in same command
+git commit -am "Commit Message"
+
+#Working Directory >>> Staging Area >>> Git Repo Local >>> Git Repo Global
+
+#Configure Text Editor with Git 
+~/.gitconfig  >>>  
+[user]
+	name = Shivam Jaiswal
+	email = jaiswalshivam124@gmail.com
+[core]
+	editor = notepad++.exe -multiInst -nosession
+  
+#Removing File from staging area to working directory
