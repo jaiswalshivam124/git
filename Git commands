@@ -28,3 +28,16 @@ git commit -am "Commit Message"
 	editor = notepad++.exe -multiInst -nosession
   
 #Removing File from staging area to working directory
+git restore --staged $Filename
+
+#Discard changes in working directory
+git restore $Filename
+
+
+#For renaming or moving use git mv command or git add -A command
+if git add can't be used, them git add $filename 
+and git add -u
+
+#Get list of files that git is tracking
+git ls-files
+
