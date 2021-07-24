@@ -41,3 +41,15 @@ and git add -u
 #Get list of files that git is tracking
 git ls-files
 
+#Using Alias for any command
+git config --global alias.hist "log --all --graph --decorate --oneline"
+
+#Diff
+git diff first second
+
+#Branching
+#Get the list of branches
+git branch -a  //local+remote branches 
+
+
+
