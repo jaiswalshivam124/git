@@ -51,5 +51,23 @@ git diff first second
 #Get the list of branches
 git branch -a  //local+remote branches 
 
+git branch $newbranchname
+git checkout $branchname
 
+#renaming branch
+git branch -m oldb newb
+
+#deleting branch
+git branch -d $branchname
+
+git checkout -b #branchname //checkout+creation
+
+#Merging
+git merge branchname //fast forward
+git merge branchname --no-ff //nofast forward
+git merge branchname -m "message"
+
+#Resolve git mergeconflicts
+# git rebase master // for rebasing
+git rebase -- abort // aborting rebase
 
