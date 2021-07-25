@@ -84,3 +84,33 @@ git stash drop //drop the last stash
 git stash -u //for including untracked files to stash
 @express command - git stash apply+git stash drop
 			git stash pop
+			
+git stash save "multiple stash" //multiples stashes with name
+git stash show stash@{0}
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash clear //drop all stash 
+
+git stash branch newbranch //create new branch, apply and drop stash
+
+#Git Tagging
+git tag myTag
+git tag --list
+git tag --delete myTag
+
+
+#Annotated Tag
+git tag -a $tagname //then enter tag details/description
+
+#Tagging a previous commit
+git tag -a myTag $CommitId
+
+#Pushing tag to remote repo
+git push origin $tagname
+
+#Pushing commits as well as tags
+git push origin master --tags
+
+#Deleting a tag from remote repo
+git push origin:$tagname
+
