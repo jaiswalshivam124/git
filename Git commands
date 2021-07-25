@@ -73,4 +73,14 @@ git rebase -- abort // aborting rebase
 git rebase --continue // continue rebasing after conflict resolution
 
 #git fetch origin master // update references
-#git pull --rebase origin master
+#git pull --rebase origin master //pull changes on local but have our own commit in local
+
+#Stashing (saving any work in progress
+git stash
+git stash apply //to get back to working env
+git stash list // list of files in stash
+git stash drop //drop the last stash
+
+git stash -u //for including untracked files to stash
+@express command - git stash apply+git stash drop
+			git stash pop
