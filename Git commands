@@ -70,4 +70,7 @@ git merge branchname -m "message"
 #Resolve git mergeconflicts
 # git rebase master // for rebasing
 git rebase -- abort // aborting rebase
+git rebase --continue // continue rebasing after conflict resolution
 
+#git fetch origin master // update references
+#git pull --rebase origin master
