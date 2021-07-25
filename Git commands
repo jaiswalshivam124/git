@@ -114,3 +114,8 @@ git push origin master --tags
 #Deleting a tag from remote repo
 git push origin:$tagname
 
+#To move between commits
+git reset $commitID
+
+#reflog
+git reflog
