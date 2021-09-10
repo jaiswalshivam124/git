@@ -64,7 +64,7 @@ git checkout -b #branchname //checkout+creation
 
 #Merging
 git merge branchname //fast forward if no changes made to destination
-git merge branchname --no-ff //nofast forward
+git merge branchname --no-ff //nofast forward preserve the fact that branching was done
 git merge branchname -m "message"
 
 #Resolve git mergeconflicts
