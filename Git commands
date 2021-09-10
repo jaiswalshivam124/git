@@ -68,6 +68,7 @@ git merge branchname --no-ff //nofast forward
 git merge branchname -m "message"
 
 #Resolve git mergeconflicts
+##Rebasing means you can have master changes applied to feature branch, it rewinds apply changes for master then feature thus flattening out history
 # git rebase master // for rebasing
 git rebase -- abort // aborting rebase
 git rebase --continue // continue rebasing after conflict resolution
