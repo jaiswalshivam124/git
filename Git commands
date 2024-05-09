@@ -62,6 +62,9 @@ git branch -d $branchname
 
 git checkout -b #branchname //checkout+creation
 
+#Delete a branch from remote repo
+hit push origin :$branchname
+
 #Merging
 git merge branchname //fast forward if no changes made to destination
 git merge branchname --no-ff //nofast forward preserve the fact that branching was done
